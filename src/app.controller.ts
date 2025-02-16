@@ -1,0 +1,27 @@
+import { Controller, Get, Render } from '@nestjs/common';
+import { AppService } from './app.service';
+
+@Controller()
+export class AppController {
+  constructor(private readonly appService: AppService) {}
+
+  @Get()
+  @Render('index')
+  getHome() {
+    return {
+      title: 'Home',
+      code: 'console.log("Hello, Home");'
+    };
+  }
+
+  @Get('about')
+  @Render('about')
+  getAbout(){
+    return {
+      title: 'About',
+      code: '<h1>This is about</h1>'
+    };
+  }
+
+
+}
