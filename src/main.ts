@@ -32,7 +32,7 @@ async function bootstrap() {
   });
 
   const partialsDir = join(__dirname, '..', 'views', 'partials');
-  hbs.registerPartial('navbar', fs.readFileSync(join(partialsDir, 'navbar.hbs'), 'utf8'));
+  hbs.registerPartial('navbar', fs.readFileSync(join(partialsDir, '_navbar.hbs'), 'utf8'));
 
   await app.listen(process.env.PORT ?? 3000);
 }
