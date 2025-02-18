@@ -1,3 +1,5 @@
+/* eslint-disable prettier/prettier */
+/* eslint-disable @typescript-eslint/no-unused-vars */
 import { Controller, Get, Render } from '@nestjs/common';
 import { AppService } from './app.service';
 import { FastifyReply } from 'fastify';

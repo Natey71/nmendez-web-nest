@@ -1,0 +1,13 @@
+nav {
+    background-color: black;
+    padding: 10px;
+}
+ul {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;    
+}
+ 
+body {
+    background-color: lightgray;
+}
